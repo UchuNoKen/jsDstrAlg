@@ -43,6 +43,7 @@ var yourNumbers = new Array(0, 2, 8, 12, 86); // // yourNumbers.length; = 5
 
 // Array constructor with arbitrary length
 var someNumbers = new Array(10); // someNumbers.length; = 10
+var moreNumbers = new Array(100); // moreNumbers.length; = 100
 
 // Array of different values
 var diffVals = [
@@ -56,4 +57,7 @@ var diffVals = [
   "preserverance"
 ];
 
-// Accessor Functions practice
+// Check if type is array
+Array.isArray(diffVals); // returns true
+
+// Iterating
