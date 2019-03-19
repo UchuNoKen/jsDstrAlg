@@ -75,3 +75,26 @@ Array.isArray(demons); // returns false
 for (var i = 0; i < arr.length; i++) {
   console.log(arr[i]);
 }
+
+// Fibonacci using arrays
+
+let fibonacci = [];
+fibonacci[0] = 0;
+fibonacci[1] = 1;
+fibonacci1[2] = 1;
+
+for (var i = 3; i < 20; i++) {
+  fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
+}
+
+// Accessing and writing array elements
+
+var nums = [];
+for (var i = 0; i < 100; i++) {
+  nums[i] = i + 1;
+}
+
+var firstNums = [1, 2, 3, 4, 5];
+var secondNums = [];
+secondNums[0] = firstNums[0] + firstNums[1];
+secondNums[1] = firstNums[2] + firstNums[3];
