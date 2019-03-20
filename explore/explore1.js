@@ -163,3 +163,12 @@ var workers = ["Mike", "Danny", "Jennifer"];
 var bosses = ["Raymond", "Cynthia", "Bryan"];
 var itDiv = workers.concat(bosses);
 console.log(itDiv);
+
+// splice()
+let itDiv = ["Mike", "Danny", "Jennifer", "Raymond", "Cynthia", "Bryan"];
+var dmpDept = itDiv.splice(3, 3); // start and end inclusive
+
+// splice() in elements
+// start at [3], remove none, add provided arguments
+let itDiv = ["Mike", "Danny", "Jennifer", "Raymond", "Cynthia", "Bryan"];
+var dmpDept = itDiv.splice(3, 0, "This", "That", "Other");
