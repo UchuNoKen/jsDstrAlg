@@ -124,7 +124,7 @@ var cis = ["Mike", "Clayton", "Terrill", "Danny", "Jennifer"]
 var dmp = ["Raymond", "Cynthia", "Bryan"];
 var itDiv = cis.concat(dmp)
 console.log(itDiv)
-itDiv = dmp.concat(cisDept);
+itDiv = dmp.concat(cis);
 print(itDiv);
 
 
