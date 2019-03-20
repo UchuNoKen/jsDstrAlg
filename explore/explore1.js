@@ -152,3 +152,14 @@ var firstPosition = names.indexOf("Ken");
 console.log("First position of Ken at " + firstPosition);
 var secondPosition = names.lastIndexOf("Ken");
 console.log("Last position of Ken at " + secondPosition);
+
+// toString()
+let names = ["David", "Mike", "Cynthia", "Raymond", "Clayton", "Jennifer", "Mike"];
+let nameString = names.join("");
+let newNames = names.toString();
+
+// concat()
+var workers = ["Mike", "Danny", "Jennifer"];
+var bosses = ["Raymond", "Cynthia", "Bryan"];
+var itDiv = workers.concat(bosses);
+console.log(itDiv);
