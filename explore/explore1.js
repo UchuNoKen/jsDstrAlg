@@ -179,7 +179,20 @@ var dmpDept = itDiv.splice(3, 0, "This", "That", "Other");
 var nums = [1, 2, 3, 4, 5];
 nums.push(6, 7, 8);
 
-// or
-
+// Add element with .length property
 let nums = [1, 2, 3, 4, 5];
 nums[nums.length] = 6;
+
+// Shift beginning of array manually
+let nums = [2, 3, 4, 5];
+var newNum = 1;
+var N = nums.length;
+for (var i = N; i >= 0; i--) {
+  nums[i] = nums[i - 1];
+}
+
+nums[0] = newNum;
+
+// Shift beginning of array using shift()
+
+// Shift beginning using shift()
