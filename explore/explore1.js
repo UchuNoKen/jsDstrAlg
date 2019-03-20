@@ -77,7 +77,6 @@ for (var i = 0; i < arr.length; i++) {
 }
 
 // Fibonacci using arrays
-
 let fibonacci = [];
 fibonacci[0] = 0;
 fibonacci[1] = 1;
@@ -88,7 +87,6 @@ for (var i = 3; i < 20; i++) {
 }
 
 // Accessing and writing array elements
-
 var nums = [];
 for (var i = 0; i < 100; i++) {
   nums[i] = i + 1;
@@ -98,3 +96,59 @@ var firstNums = [1, 2, 3, 4, 5];
 var secondNums = [];
 secondNums[0] = firstNums[0] + firstNums[1];
 secondNums[1] = firstNums[2] + firstNums[3];
+
+// Creat arrays from strings
+var sentence = "Get to the chopper pronto";
+var words = sentence.split(" ");
+
+for (var i = 0; i < words.length; i++) {
+  console.log("word " + i + ": " + words[i]);
+}
+
+var phrase = "Keep calm and carry on";
+var phraseWords = phrase.split(" ");
+
+for (var i = 0; i < phraseWords.length; i++) {
+  console.log("phrase part " + i + ": " + phraseWords[i]);
+}
+
+// Shallow copy an array (references the value at the same address)
+var figures = [1, 2, 3, 4, 5];
+var otherFigures = figures;
+
+// Deep copy an array
+function copy(arr1, arr2) {
+  for (var i = 0; i < arr1.length; i++) {
+    arr2[i] = arr1[i];
+  }
+}
+
+// Accessor functions
+
+// indexOf()
+let pets = ["dog", "cat", "goldfish", "parrot"];
+
+let getPet = pets.indexOf("dog"); // 0
+if (getPet >= 0) {
+  console.log("Found element at position " + getPet);
+}
+
+// lastIndexOf()
+var names = [
+  "David",
+  "Mike",
+  "Noah",
+  "Ken",
+  "Cynthia",
+  "Noah",
+  "Raymond",
+  "Clayton",
+  "Jennifer",
+  "Mike",
+  "Ken"
+];
+
+var firstPosition = names.indexOf("Ken");
+console.log("First position of Ken at " + firstPosition);
+var secondPosition = names.lastIndexOf("Ken");
+console.log("Last position of Ken at " + secondPosition);
