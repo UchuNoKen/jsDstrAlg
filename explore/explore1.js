@@ -1,6 +1,6 @@
 // Arrays
 
-// Creating arrays practice
+// Creating arrays practice --------------------------------------------------------------
 
 // Literals
 
@@ -172,3 +172,14 @@ var dmpDept = itDiv.splice(3, 3); // start and end inclusive
 // start at [3], remove none, add provided arguments
 let itDiv = ["Mike", "Danny", "Jennifer", "Raymond", "Cynthia", "Bryan"];
 var dmpDept = itDiv.splice(3, 0, "This", "That", "Other");
+
+// Mutator functions ------------------------------------------------------------------------
+
+// Add elements with push()
+var nums = [1, 2, 3, 4, 5];
+nums.push(6, 7, 8);
+
+// or
+
+let nums = [1, 2, 3, 4, 5];
+nums[nums.length] = 6;
