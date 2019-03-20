@@ -164,6 +164,10 @@ var bosses = ["Raymond", "Cynthia", "Bryan"];
 var itDiv = workers.concat(bosses);
 console.log(itDiv);
 
+let hr = ["Barry", "Megan", "Walt", "Nicole"];
+let employees = hr.concat(itDiv);
+console.log(employees);
+
 // splice()
 let itDiv = ["Mike", "Danny", "Jennifer", "Raymond", "Cynthia", "Bryan"];
 var dmpDept = itDiv.splice(3, 3); // start and end inclusive
@@ -174,6 +178,7 @@ let itDiv = ["Mike", "Danny", "Jennifer", "Raymond", "Cynthia", "Bryan"];
 var dmpDept = itDiv.splice(3, 0, "This", "That", "Other");
 
 // Mutator functions ------------------------------------------------------------------------
+// [Adding elements]
 
 // Add elements with push()
 var nums = [1, 2, 3, 4, 5];
@@ -183,7 +188,7 @@ nums.push(6, 7, 8);
 let nums = [1, 2, 3, 4, 5];
 nums[nums.length] = 6;
 
-// Shift beginning of array manually
+// Unshift beginning of array manually
 let nums = [2, 3, 4, 5];
 var newNum = 1;
 var N = nums.length;
@@ -193,6 +198,19 @@ for (var i = N; i >= 0; i--) {
 
 nums[0] = newNum;
 
-// Shift beginning of array using shift()
+// Unshift beginning of array using unshift()
+let nums = [2, 3, 4, 5];
+nums.unshift(1);
 
-// Shift beginning using shift()
+let newNum = 1;
+let nums = [3, 4, 5];
+nums.unshift(newNum, 2);
+
+// [Removing elements]
+
+// Remove last element with a loop
+var nums = [9, 1, 2, 3, 4, 5];
+
+for (var i = 0; i < nums.length; ++i) {
+  nums[i] = nums[i + 1];
+}
